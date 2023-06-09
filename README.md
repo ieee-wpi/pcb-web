@@ -8,7 +8,7 @@ This is a template for websites which will be deployed through Gitlab's CI syste
 3. Add site info to ansible
 4. deploy ansible's `arc.yml` (`-l arcwww03`)
 
-##Site setup & Usage:
+## Site setup & Usage:
 
 - Put all files which will be directly served in html/
 - Put stuff that should not be accessible from the Internet anywhere else
