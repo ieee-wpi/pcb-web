@@ -1,7 +1,148 @@
-<html>
-<head><title>Template Webpage</title></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essentials of PCB Design at WPI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <style>
+        :root { 
+            --primary-color: #AC2B37; 
+            --secondary-color: #63666A; 
+        }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('../images/hero.jpg'); 
+            background-size: cover; 
+            background-position: center;
+            padding: 6rem 0; 
+            color: white; 
+        }
+        .btn-primary { 
+            background-color: var(--primary-color); 
+            border-color: var(--primary-color); 
+        }
+        .btn-primary:hover {
+            background-color: #8c232d;
+            border-color: #8c232d;
+        }
+        .feature-icon { 
+            font-size: 2.5rem; 
+            color: var(--primary-color); 
+        }
+        .footer { 
+            background-color: var(--secondary-color); 
+            color: white; 
+            padding: 2rem 0; 
+        }
+    </style>
+</head>
 <body>
-<h2>Template Webpage</h2><br/>
-This site is under constructionl.
+    <section class="bg-white">
+        <div class="hero text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Learn PCB Design at WPI</h1>
+                <p class="lead fw-light mb-4" style="font-size: 2rem;">Project-oriented hardware design course</p>
+                <a href="https://github.com/ieee-wpi/pcb" class="btn btn-primary btn-lg">
+                    <i class="bi bi-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Why This Course Exists</h2>
+                    <p class="lead mb-4">WPI's curriculum, while project-focused, leaves a gap in practical hardware design skills. Many students graduate without the ability to design and build personal projects.</p>
+                    
+                    <h3 class="h4 mb-3">Our Mission</h3>
+                    <div class="d-flex justify-content-center">
+                        <ul class="list-unstyled text-start mb-4">
+                            <li class="mb-3 fs-5"><i class="bi bi-arrow-right-circle-fill text-danger me-2 fs-4"></i>Augment WPI's curriculum with practical hardware design skills.</li>
+                            <li class="mb-3 fs-5"><i class="bi bi-arrow-right-circle-fill text-danger me-2 fs-4"></i>Instill careful, elegant, and thoughtful design methodology.</li>
+                            <li class="mb-3 fs-5"><i class="bi bi-arrow-right-circle-fill text-danger me-2 fs-4"></i>Give you the skills and inspiration to embark on your own projects.</li>
+                        </ul>
+                    </div>
+
+                    <h3 class="h4 mb-3">Our Approach</h3>
+                        <p class="mb-0">Instead of teaching scientific or rigorous PCB design methods, we focus on hands-on, design-driven approaches. These methods can be applied to your own projects to achieve practical results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4">Content</h2>
+                    <div class="row align-items-center">
+                        <div class="col-md-12 mx-auto">
+                            <p class="mb-4">As part of the course, <strong>students layout and route a PCB</strong> using a schematic we provide. The design contains a popular Arduino compatible microcontroller along with up to 30 RGB LEDs. Students are given this validated design, and are encouraged to add on their own custom peripherals with the help of our instructors and TAs.</p>
+                            <img src="../images/pcb.png" alt="Student Designed PCB" class="img-fluid rounded mb-4 w-75">
+                            <p class="mb-4"><strong>We've developed rich materials</strong> for students, including detailed lectures slides, lecture recordings, starter board and code files. After attending four lectures, students are given a starter board file and have two weeks to design their boards. We offer office hours for students to receive help. Afterwards, we manufacture student boards and students assemble their boards, completely for free. </p>
+                        </div>
+                    </div>
+                    <h3 class="text-center mb-4">Lecture Slides</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="list-group text-start">
+                                <a href="https://github.com/ieee-wpi/pcb/raw/main/slides/01-basics.pdf" target="_blank" class="list-group-item list-group-item-action position-relative p-4">
+                                    <h5 class="mb-2">Lecture 1: Introduction to PCB Design</h4>
+                                    <p class="mb-0 text-muted">PCB structure, design, and manufacturing</p>
+                                    <i class="bi bi-box-arrow-up-right text-danger fs-4 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                </a>
+                                <a href="https://github.com/ieee-wpi/pcb/raw/main/slides/02-design.pdf" target="_blank" class="list-group-item list-group-item-action position-relative p-4">
+                                    <h5 class="mb-2">Lecture 2: Project Design</h4>
+                                    <p class="mb-0 text-muted">Researching and designing a personal project</p>
+                                    <i class="bi bi-box-arrow-up-right text-danger fs-4 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                </a>
+                                <a href="https://github.com/ieee-wpi/pcb/raw/main/slides/03-layout-routing.pdf" target="_blank" class="list-group-item list-group-item-action position-relative p-4">
+                                    <h5 class="mb-2">Lecture 3: Layout + Routing</h4>
+                                    <p class="mb-0 text-muted">Design methodology for component layout and routing</p>
+                                    <i class="bi bi-box-arrow-up-right text-danger fs-4 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                </a>
+                                <a href="https://github.com/ieee-wpi/pcb/raw/main/slides/04-kicad.pdf" target="_blank" class="list-group-item list-group-item-action position-relative p-4">
+                                    <h5 class="mb-2">Lecture 4: KiCad</h4>
+                                    <p class="mb-0 text-muted">How to use KiCad as a design tool and a basic exercise</p>
+                                    <i class="bi bi-box-arrow-up-right text-danger fs-4 position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white">
+            <footer class="footer text-center" style="background-color: var(--primary-color);">
+                <div class="container">
+                    <p class="mb-0 small">
+                        <a href="https://ieee.wpi.edu" class="text-white mb-2">WPI IEEE Student Branch</a> |
+                        <a href="https://github.com/ieee-wpi/pcb" class="text-white">GitHub</a> |
+                        <a href="mailto:gr-pcb@wpi.edu" class="text-white">Contact Us</a>
+                    </p>
+                    <p class="mb-0 mt-4 small">Licensed under 
+                        <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="text-white">
+                            <i class="bi bi-creative-commons"></i>
+                            <i class="bi bi-creative-commons-by"></i>
+                            <i class="bi bi-creative-commons-sa"></i>
+                            CC BY-SA 4.0
+                        </a>
+                    </p>
+                </div>
+            </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
